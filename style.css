@@ -1,0 +1,136 @@
+@font-face{
+    font-family: 'pokemon';
+    src:url('font/Pokemon Hollow.otf')
+}
+
+@font-face{
+    font-family: 'bit';
+    src:url('font/8bit.ttf');
+}
+
+body{
+    background: rgb(80,0,0);
+}
+
+.card-img, .card-img-bottom, .card-img-top {
+    width: 60%;
+}
+
+#titulo_pokemon {
+    font-family: pokemon;
+    font-size: 4em;
+}
+
+#nome_pokemon {
+    display: inline-block;
+    padding: 8px;
+    color:white;
+    font-family: bit;    
+    min-width: 220px;
+    letter-spacing: 1px;
+}
+
+#card_title{
+    display: block;
+    border-radius: 0 0 18px 18px;
+    background-color: rgb(190,0,0);
+    margin: 0 auto;  
+}
+
+.card{
+    width: 100%; 
+    background: url(img/Pokeball.jpg) no-repeat;
+    background-size: cover;
+    background-position: center -50px;
+    border: 2px solid rgb(190,0,0);
+    border-radius: .45rem;
+}
+
+.hr-card{
+    border: 1px solid rgb(190,0,0);
+}
+
+.card-body{
+    padding: 10px;
+    padding-bottom: 8px;
+    color:black;
+    background: rgb(235,235,235);
+    font-family: bit; 
+    justify-content: center;
+    align-content: center;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+#tipo_pokemon{
+    font-size: 1.3em;
+    margin-right: 1em;
+}
+
+#peso_pokemon{
+    font-size: 1.3em;
+}
+
+#conteudo{
+    min-width:22em;
+    max-width: 30em;
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+        padding-left: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+}
+
+li{
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 6px;
+    font-weight: 500;
+    text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+    .card-img, .card-img-bottom, .card-img-top {
+        width: 50%;
+    }
+    ul{
+        padding-left: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+    }
+    
+    li{
+        font-size: 1em;
+    }
+
+    #tipo_pokemon{
+        font-size: 1.2em;
+        margin-right: .4em;
+    }
+
+    #peso_pokemon{
+        font-size: 1.2em;
+    }
+    
+    h2{
+        margin: 0;
+    }
+    
+    .card-body{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

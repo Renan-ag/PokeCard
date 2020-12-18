@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>PokeDex</title>
+  </head>
+  <body>
+   <header>
+    <h1 id="titulo_pokemon" 
+    class="text-center text-light mb-4">Poke Card</h1>
+    
+    <div style="width: 70%;" class="m-auto">
+        <div class="input-group mb-3">
+          <input type="text" id="pokemon" class="form-control" placeholder="Pokemon's name">
+          <div class="input-group-append">
+            <button class="btn btn-danger" type="button" id="button-addon2" onclick="getDadosPokemon()">Search</button>
+          </div>
+        </div>
+    </div>
+    </header>
+    
+    <main id="conteudo">
+        <div id="carta"class="card m-auto shadow-lg">
+           <div id="card_title">
+               <h1 id="nome_pokemon" class="h3 text-center">Name Pokemon</h1>
+           </div>
+           <img src="https://image.flaticon.com/icons/png/512/36/36601.png" 
+           class="card-img-top m-auto"
+           id="img_pokemon"
+           alt="Pokemon">
+           <hr class="hr-card mb-0">
+          <div class="card-body">
+            <div class="flex-row m-auto ">
+                <h2 class="" id="tipo_pokemon">Type: </h2>
+                <h2 class="" id="peso_pokemon">Weight: </h2>
+            </div>
+
+            <div class="mt-3">
+                <h2 class="text-center h4">Base Stats</h2>
+                <div class="flex-row">
+                    <ul>
+                        <li class="stats">Hp: </li>
+                        <li class="stats">Attack: </li>
+                        <li class="stats">Defense: </li>
+                    </ul>
+
+                    <ul>
+                        <li class="stats">Sp. attack: </li>
+                        <li class="stats">Sp. defense: </li>
+                        <li class="stats">Speed: </li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <script src="API.js"></script>
+  </body>
+</html>
